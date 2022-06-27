@@ -48,23 +48,6 @@ export default class EthereumRpc {
     }
   }
 
-  // async signTransaction(): Promise<string> {
-  //   try {
-  //     const provider = new ethers.providers.Web3Provider(this.provider as any)
-  //     const signer = provider.getSigner()
-  //     const address = await signer.getAddress()
-  //     const txRes = await signer.signTransaction({
-  //       from: address,
-  //       to: address,
-  //       value: ethers.utils.parseEther('0.01'),
-  //     })
-  //     console.log(txRes)
-  //     return txRes
-  //   } catch (error) {
-  //     return error as string
-  //   }
-  // }
-
   async signAndSendTransaction(): Promise<string> {
     try {
       const provider = new ethers.providers.Web3Provider(this.provider as any)
