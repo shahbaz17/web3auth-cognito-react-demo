@@ -11,7 +11,7 @@ import './App.css'
 import RPC from './evm.ethers'
 
 const clientId =
-  'BBWLCT1dIp57_-rJQwfMTTWqZgncOKu56b1TSqyLptpwSKrEndkCerKzgJ7aZ87_jviI5oLUJVCt-_mTqBJUSyQ' // get from https://dashboard.web3auth.io
+  'BGZ69Ku0bb3vwZev4Umz71PfsoJ1HxWOTPo8LcHGC8OY0tDspv8oYFb6bY7deYeDDUS7S524SDhaMsi0XocOt9M' // get from https://dashboard.web3auth.io
 
 function App() {
   const [web3auth, setWeb3auth] = useState<Web3AuthCore | null>(null)
@@ -95,7 +95,7 @@ function App() {
     await web3auth.logout()
     setProvider(null)
     window.open(
-      'https://shahbaz-web3auth.auth.ap-south-1.amazoncognito.com/logout?client_id=2upuksfh6n0n5c0nciirc1bdrv&logout_uri=http://localhost:3000&redirect_uri=http://localhost:3000',
+      'https://shahbaz-web3auth.auth.ap-south-1.amazoncognito.com/logout?client_id=2upuksfh6n0n5c0nciirc1bdrv&logout_uri=https://web3auth-cognito-react-demo.vercel.app&redirect_uri=https://web3auth-cognito-react-demo.vercel.app',
     )
   }
 
