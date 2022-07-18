@@ -95,7 +95,7 @@ function App() {
     await web3auth.logout()
     setProvider(null)
     window.open(
-      'https://shahbaz-web3auth.auth.ap-south-1.amazoncognito.com/logout?client_id=2upuksfh6n0n5c0nciirc1bdrv&logout_uri=https://web3auth-cognito-react-demo.vercel.app&redirect_uri=https://web3auth-cognito-react-demo.vercel.app',
+      'https://shahbaz-web3auth.auth.ap-south-1.amazoncognito.com/logout?client_id=2upuksfh6n0n5c0nciirc1bdrv&logout_uri=https://web3auth-cognito-react-demo.vercel.app&redirect_uri=https://web3auth-cognito-react-demo.vercel.app&response_type=token',
     )
   }
 
